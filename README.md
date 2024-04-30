@@ -1,8 +1,48 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+### Steps to Installation
+
+1. **Install Android Studio (Iguana - latest version):**
+
+   - Download Android Studio from [this link](https://developer.android.com/studio?gad_source=1&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rEJO74DjypqQ4lZrH1Ah1kxoCnHHPqPoUCFMmmUQ-Ip-sm9TdGRqDhoCeX4QAvD_BwE&gclsrc=aw.ds).
+   - Follow the installation instructions specific to your operating system.
+
+2. **Install Android SDK (Android 14, API level 34):**
+
+   - Open Android Studio.
+   - Go to `Tools` > `SDK Manager`.
+   - Make sure that the Android 14 SDK (API level 34) is installed. If not, select it and click on the "Apply" or "Install" button to install it.
+
+3. **Register ANDROID_HOME environment variable:**
+
+   - Follow the instructions provided in the [React Native documentation](https://reactnative.dev/docs/environment-setup) to set up the `ANDROID_HOME` environment variable. This variable should point to the location where your Android SDK is installed.
+
+4. **Add platform-tools to Path:**
+
+   - Follow the instructions provided in the [React Native documentation](https://reactnative.dev/docs/environment-setup) to add the `platform-tools` directory to your system's PATH environment variable. This directory is typically located inside the Android SDK installation directory.
+
+5. **Install Node modules:**
+
+   - Open a terminal.
+   - Navigate to the root directory of your React Native project (`user-contact-react-native`).
+   - Run the following command to install the required Node modules:
+     ```bash
+     cd user-contact-react-native
+     npm install
+     ```
+
+6. **Launch Emulator or connect physical device:**
+
+   - Launch an Android emulator using Android Studio's AVD Manager, or connect a physical Android device to your computer using a USB cable.
+
+7. **Run the project:**
+   - Once the emulator is running or the physical device is connected:
+     ```bash
+     npm start
+     ```
+   - This command will start the Metro Bundler, which bundles your JavaScript code, and provide options to run your app on the emulator or physical device.
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
